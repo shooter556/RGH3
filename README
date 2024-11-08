@@ -1,0 +1,25 @@
+A completely re-designed RGH3 code, now open-source!
+
+Supports:
+- Zephyr (not guaranteed)
+- Falcon
+- Jasper
+- Trinity
+- Corona
+
+Features:
+- RGH3 stages are printed in UART debug output
+- Proper hardware RROD indication
+- SMC overclocking for hi-precision Fat glitching
+
+Build requirements:
+- Python 3
+- pycryptodome library
+
+How to build:
+- Run make.bat within the folder you need
+
+Known limitations / issues:
+- Zephyr is not tested / refined properly
+- Falcon / Jasper may take 10-20 attempts to boot
+- LED Ring may be inadequate at boot because of busy loops
