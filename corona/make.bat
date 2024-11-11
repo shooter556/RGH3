@@ -3,5 +3,5 @@
 python smc_patcher.py
 python ..\rgh3_build.py
 type nul >>image.ecc
-..\nandpro.exe image.ecc: +W16 image.bin :1198010
+..\nandpro.exe image.ecc: +W16 image.bin :23010
 pause
