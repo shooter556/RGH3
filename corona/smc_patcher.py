@@ -53,9 +53,9 @@ smc = patch(smc, 0x2E9A, lcall(rom_end))
 smc = patch(smc, 0x2EA0, lcall(rom_end + 0xA))
 
 #               IN  W   DB=[01  F0  01  Fx] EX
-slow_data = b"\x00\x0E\xDB\x01\xF0\x01\xF0\x03"
-fast_data = b"\x00\x0E\xDB\x01\xF0\x01\xF8\x03"
-smc  = patch(smc, 0x2e49, slow_data + fast_data)
+fast_data = b"\x00\x0E\xDB\x01\xF0\x01\xF0\x03"
+slow_data = b"\x00\x0E\xDB\x01\xF0\x01\xF8\x03"
+smc  = patch(smc, 0x2e49, fast_data + slow_data)
 
 # pre-main init code
 smc = patch (smc, INIT_START, init_bin + ljmp(0x293C))
