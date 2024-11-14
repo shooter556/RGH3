@@ -1,0 +1,10 @@
+NandPro v3.0a by Tiros
+
+Using Virtual Nand Device File: image.ecc
+Flash Config: 0x00023010 forced by command line
+Block Size: 16KB Block Limits: 0x000000..0x0003FF
+File: image.bin
+Opt: Raw mode disabled
+Opt: Spare data will be initialized
+Opt: Block markers will be initialized
+Opt: Ecc will be re-calculated
