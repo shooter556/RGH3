@@ -212,7 +212,7 @@ check_state_9:
 check_state_7:
     cjne   @R0, #STATE_TEST_SUCC, check_state_8
     mov    R1, #DELAY_REG
-    mov    @R1, #100 ; about 100 ms to check the hardware init result
+    mov    @R1, #00 ; 256ms maxthe hardware init result
     setb   SMC_ARG_E        ; enable argon processing
     jnb    POSTBIT, go_next_step
 go_reset:
