@@ -1,5 +1,5 @@
 import struct, secrets, sys, hmac, hashlib
-import Crypto.Cipher.ARC4 as RC4
+import Cryptodome.Cipher.ARC4 as RC4
 
 key_1BL = b"\xDD\x88\xAD\x0C\x9E\xD6\x69\xE7\xB5\x67\x94\xFB\x68\x56\x3E\xFA"
 
